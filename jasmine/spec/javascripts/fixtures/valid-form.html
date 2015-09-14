@@ -1,0 +1,35 @@
+<!--
+  Formulario válido
+-->
+
+<form data-galleryembedgenerator>
+  <input type="hidden" name="baseurl"   value="http://cdn.educ.ar/galeria/" disabled>
+  <input type="hidden" name="rec_id"    value="12345" disabled>
+
+  <label for="autoplay"><input type="checkbox" name="autoplay" disabled>Cambiar de imagen automáticamente</label>
+  <label for="time">cada</label>
+  <input type="text" value="" name="time" readonly disabled> milisegundos
+
+  <label for="dimensiones">Dimensiones</label>
+  <select class="form-control" name="dimensiones" disabled>
+    <option value="w320h180" selected>320 x 180</option>
+    <option value="w480h270">480 x 270</option>
+    <option value="w640h480">640 x 480</option>
+    <option value="custom">Personalizado</option>
+    <option value="none">No definidas (adaptativo)</option>
+  </select>
+
+  <label for="width">Ancho</label>
+  <input type="text" value="320" name="width" readonly disabled>
+
+  <label for="height">Alto</label>
+  <input type="text" value="180" name="height"readonly disabled>
+
+  <label for="skin">Diseño</label>
+  <select name="skin" disabled>
+    <option value="twelve" selected>Twelve</option>
+    <option value="classic">Classic</option>
+  </select>
+
+  <textarea data-galleryembedgenerator-target name="embeddercode" readonly disabled></textarea>
+</form>
